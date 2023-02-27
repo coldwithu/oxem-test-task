@@ -574,7 +574,7 @@ input[type='range']:active::-webkit-slider-thumb{
     line-height: 24px;
     color: #575757;
 }
-.form-inputs__item input .error{
+.form-inputs__item .error{
     background: #F3F3F4;
     border: 1px solid #D53234;
 }
@@ -842,6 +842,11 @@ input[type='range']:active::-webkit-slider-thumb{
     .submit__text{
         text-align: center;
     }
+    .input-error{
+        top:50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
 
 }
 @media (max-width: 480px){
@@ -866,6 +871,9 @@ input[type='range']:active::-webkit-slider-thumb{
         width: 462px;
         height: 261px;
     }
+    .input-error{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 320px){
@@ -883,6 +891,9 @@ input[type='range']:active::-webkit-slider-thumb{
         height: 261px;
     }
 
+    .input-error{
+        font-size: 12px;
+    }
     .burger__menu.active{
         width: 260px;
     }

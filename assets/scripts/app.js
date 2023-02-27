@@ -81,6 +81,10 @@ const hidePopup = () => {
 const clearInputs = () => {
     telInput.value = '';
     nameInput.value = '';
+    telInput.classList.remove('error');
+    nameInput.classList.remove('error');
+    errors[0].style.display = "none";
+    errors[1].style.display = "none";
 }
 
 burger.addEventListener('click', () => {
